@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070c0a">
+<title>لا تضغطي قبل أن تتحققي 🛡️ | معلمات التقنية</title>
+<style>
+:root{--bg:#070c0a;--card:#0f1914;--line:#1d3a2b;--g:#2bff88;--tx:#e8f5ee;--mu:#8fb3a0;--red:#ff4d5e;--amb:#ffc247}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:radial-gradient(800px 460px at 50% -10%,#0d2e1c,var(--bg));color:var(--tx);font-family:"Tajawal","Segoe UI",Tahoma,sans-serif;min-height:100%;line-height:1.75;padding:calc(16px + env(safe-area-inset-top,0px)) 16px calc(24px + env(safe-area-inset-bottom,0px))}
+.w{max-width:520px;margin:0 auto}
+.top{text-align:center;color:var(--mu);font-size:14px;margin-bottom:10px}
+h1{font-size:clamp(26px,7.5vw,38px);margin:4px 0 6px;text-align:center}
+h1 b{color:var(--g);text-shadow:0 0 18px #2bff8855}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin:12px 0}
+.alert{border-color:var(--red);box-shadow:0 0 0 1px #ff4d5e55,0 0 28px #ff4d5e33;animation:blink 1.4s infinite}
+@keyframes blink{50%{box-shadow:0 0 0 1px #ff4d5e,0 0 40px #ff4d5e66}}
+@media (prefers-reduced-motion:reduce){.alert{animation:none}}
+.alert h2{color:var(--red);margin:0 0 6px;font-size:21px}
+.tag{display:inline-block;background:#2bff8822;color:var(--g);border:1px solid var(--g);border-radius:99px;padding:2px 12px;font-size:13px;font-weight:700;margin-bottom:8px}
+button{font:inherit;cursor:pointer;border-radius:14px;border:1px solid var(--line);background:#12241b;color:var(--tx);padding:12px 14px;width:100%;margin-top:8px;text-align:right}
+button.p{background:var(--g);color:#04210f;font-weight:800;text-align:center;border:0}
+button.d{background:var(--red);color:#fff;font-weight:800;text-align:center;border:0}
+button:disabled{cursor:default}
+.o:hover:not(:disabled){border-color:var(--g)}
+.ok{border-color:var(--g)!important;background:#16a34a33!important}
+.no{border-color:var(--red)!important;background:#ff4d5e22!important}
+.bar{height:6px;background:#12241b;border-radius:9px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--g);transition:width .3s}
+.msg{background:#0a120e;border:1px dashed var(--line);border-radius:14px;padding:12px;margin:10px 0;direction:rtl}
+.msg small{color:var(--mu);display:block;margin-bottom:4px}
+.fb{border-radius:14px;padding:12px;margin-top:10px;background:#0a120e;border:1px solid var(--line)}
+.score{font-size:56px;font-weight:900;color:var(--g);text-align:center;line-height:1.1}
+.tip{border-right:3px solid var(--amb);padding:4px 10px;margin:8px 0;color:#f3e6bf}
+#snd{width:auto;display:block;margin:0 auto 6px;padding:6px 16px;font-size:14px;text-align:center}
+.foot{text-align:center;color:var(--mu);font-size:12.5px;margin-top:18px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="w">
+<div class="top">🛡️ للمعلمات والطالبات • مدارس الأندلس • الأمن السيبراني</div>
+<button id="snd" class="o">🔇 فعّلي الصوت</button>
+<h1>لا تضغطي <b>قبل أن تتحققي</b></h1>
+
+<section id="s0">
+<div id="al" class="card alert">
+<span class="tag">محاكاة توعوية • لا يوجد أي خطر حقيقي</span>
+<h2>⚠️ تنبيه أمني عاجل</h2>
+<p>تم رصد 3 فيروسات على جهازك! اضغطي الآن لإصلاحه قبل أن تُسرق بياناتك.</p>
+<button class="d" id="fix">إصلاح الجهاز الآن</button>
+<button id="chk" class="o">أتوقف وأتحقق أولًا</button>
+</div>
+<div id="lead" class="card" hidden>
+<p id="lt"></p>
+<button class="p" id="go">ابدئي الاختبار (5 مواقف)</button>
+</div>
+<p class="foot">هذا الموقع لا يفحص جوالك فعليًا، ولا يطلب أي كلمات مرور أو بيانات شخصية.</p>
+<p class="foot">إعداد وتصميم: معلمات التقنية<br><b style="color:var(--g)">نهى ابوناب • ريم الغامدي</b></p>
+</section>
+
+<section id="s1" hidden>
+<div class="bar"><i id="pb"></i></div>
+<div class="card">
+<div class="tag" id="qn"></div>
+<div class="msg"><small id="qc"></small><span id="qs"></span></div>
+<b>ماذا ستفعلين؟</b>
+<div id="op"></div>
+<div id="fb" class="fb" hidden></div>
+<button class="p" id="nx" hidden>التالي</button>
+</div>
+</section>
+
+<section id="s2" hidden>
+<div class="card">
+<div class="score" id="sc"></div>
+<h2 id="lv" style="text-align:center;margin:6px 0"></h2>
+<div id="tips"></div>
+<button class="p" id="sh">شاركي الاختبار مع زميلاتك 🛡️</button>
+<button id="rs">إعادة المحاولة</button>
+<p class="foot" id="cp"></p>
+<p class="foot">إعداد وتصميم: معلمات التقنية<br><b style="color:var(--g)">نهى ابوناب • ريم الغامدي</b></p>
+</div>
+</section>
+</div>
+<script>
+const Q=[
+{c:"رسالة واتساب من رقم غير محفوظ",s:"مدارس الأندلس: عزيزتنا، سيتوقف حسابك في المنصة خلال ساعة! حدّثي بياناتك الآن: andalus-update.example/login",
+o:["أضغط الرابط بسرعة قبل أن يتوقف حسابي","لا أضغط، وأتواصل مع الإدارة بقناة رسمية أعرفها","أرسل الرسالة لزميلاتي ليتحققن"],a:1,
+ok:"الاستعجال والتهديد بإيقاف الحساب أسلوب شائع في التصيّد.",tip:"لا تضغطي روابط تصلك على عجل. افتحي المنصة الرسمية بنفسك أو اتصلي بالإدارة."},
+{c:"رسالة نصية SMS",s:"البنك: تم إيقاف بطاقتك. لإعادة التفعيل أرسلي رمز التحقق الذي وصلك الآن.",
+o:["أرسل الرمز لأفعّل بطاقتي","لا أشارك الرمز مع أحد، وأتصل بالرقم الرسمي خلف بطاقتي","أرد على الرسالة وأسألهم من هم"],a:1,
+ok:"رمز التحقق مفتاح حسابك، والبنك الحقيقي لا يطلبه منك.",tip:"لا تشاركي رمز التحقق مع أي شخص، حتى لو ادّعى أنه من البنك أو الدعم الفني."},
+{c:"بريد إلكتروني",s:"من: مدير النظام (it-support@school-mail.example) — افتحي المرفق «نتائج_الاختبارات.zip» الآن لتحديث النظام.",
+o:["أفتحه فورًا لأنه يبدو من الإدارة","أتحقق من عنوان المرسل وأسأل جهة أعرفها قبل فتحه","أحمّله وأفتحه لاحقًا"],a:1,
+ok:"المرفقات غير المتوقعة قد تحمل برامج ضارة، وعنوان المرسل قد يكون مزوّرًا.",tip:"لا تفتحي مرفقًا لم تتوقعيه، وتحققي من المرسل بوسيلة أخرى."},
+{c:"إنشاء حساب جديد",s:"تنشئين حسابًا جديدًا على أحد التطبيقات. ما أفضل طريقة لحمايته؟",
+o:["نفس كلمة المرور في كل حساباتي لأتذكرها","عبارة طويلة مختلفة لكل حساب مع التحقق بخطوتين","تاريخ ميلادي مع رقم جوالي"],a:1,
+ok:"تكرار كلمة المرور يجعل اختراق حساب واحد يفتح بقية حساباتك، والمعلومات الشخصية سهلة التخمين.",tip:"استخدمي كلمة مرور طويلة مختلفة لكل حساب، وفعّلي التحقق بخطوتين."},
+{c:"في مقهى أو مطار",s:"ظهرت شبكة واي فاي مجانية بدون كلمة مرور، وتطلب تسجيل الدخول بحساب المدرسة.",
+o:["أتصل وأدخل بيانات حسابي لأتابع عملي","لا أدخل أي حساب مهم، وأستخدم بيانات جوالي أو شبكة أثق بها","أتصل وأدخل بياناتي البنكية بسرعة"],a:1,
+ok:"الشبكات العامة المفتوحة قد تُراقب أو تكون شبكات مزيفة.",tip:"تجنبي الدخول إلى حساباتك المهمة عبر الشبكات العامة."}];
+const $=id=>document.getElementById(id),show=n=>{['s0','s1','s2'].forEach((x,i)=>$(x).hidden=i!==n);scrollTo(0,0)};
+let ac=null,on=false,alt=null;
+function ctx(){ac=ac||new(window.AudioContext||window.webkitAudioContext)();if(ac.state==='suspended')ac.resume();return ac}
+function tone(f,t0,d,ty,v){const c=ctx(),o=c.createOscillator(),g=c.createGain(),t=c.currentTime+t0;o.type=ty||'sine';o.frequency.setValueAtTime(f,t);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v||.15,t+.02);g.gain.exponentialRampToValueAtTime(.001,t+d);o.connect(g);g.connect(c.destination);o.start(t);o.stop(t+d+.05)}
+const snd={ok:()=>{tone(660,0,.15);tone(880,.12,.25)},no:()=>{tone(200,0,.3,'sawtooth',.1);tone(150,.15,.3,'sawtooth',.1)},tap:()=>tone(520,0,.06,'square',.05),win:()=>[523,659,784,1047].forEach((f,k)=>tone(f,k*.14,.3)),alarm:()=>{tone(880,0,.25,'square',.07);tone(660,.3,.25,'square',.07)}};
+const play=n=>{if(on)try{snd[n]()}catch(e){}};
+function stopAlarm(){clearInterval(alt);alt=null}
+function startAlarm(){stopAlarm();play('alarm');alt=setInterval(()=>play('alarm'),900)}
+$('snd').onclick=()=>{on=!on;$('snd').textContent=on?'🔊 الصوت مفعّل':'🔇 فعّلي الصوت';if(on){ctx();play('tap');if(!$('s0').hidden&&!$('al').hidden)startAlarm()}else stopAlarm()};
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stopAlarm()});
+let i=0,score=0,wrong=[],ord=[];
+const shuf=a=>{a=[...a];for(let k=a.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]]}return a};
+function lead(t){stopAlarm();play('tap');$('al').hidden=true;$('lt').textContent=t;$('lead').hidden=false}
+$('fix').onclick=()=>lead('🎣 هذا بالضبط ما يريده المحتال: ضغطة بدافع الخوف. لحسن الحظ هذه محاكاة! لنتدرب على مواقف حقيقية.');
+$('chk').onclick=()=>lead('👏 ممتازة! التوقف والتحقق هو أقوى درع. لنختبر نفسك في 5 مواقف واقعية.');
+$('go').onclick=()=>{play('tap');i=0;score=0;wrong=[];show(1);ask()};
+function ask(){const q=Q[i];$('pb').style.width=(i/Q.length*100)+'%';$('qn').textContent='الموقف '+(i+1)+' من '+Q.length;
+$('qc').textContent=q.c;$('qs').textContent=q.s;$('fb').hidden=true;$('nx').hidden=true;$('op').innerHTML='';
+ord=shuf(q.o.map((t,k)=>k));ord.forEach(k=>{const b=document.createElement('button');b.className='o';b.textContent=q.o[k];b.onclick=()=>pick(k,b);$('op').appendChild(b)})}
+function pick(k,btn){const q=Q[i],bs=[...$('op').children];bs.forEach(b=>b.disabled=true);
+const good=k===q.a;if(good)score++;else wrong.push(i);
+btn.classList.add(good?'ok':'no');play(good?'ok':'no');if(!good)bs[ord.indexOf(q.a)].classList.add('ok');
+$('fb').innerHTML=(good?'✅ إجابة صحيحة. ':'❌ ليست الأفضل. ')+q.ok;$('fb').hidden=false;
+$('nx').textContent=i<Q.length-1?'التالي':'عرض النتيجة';$('nx').hidden=false}
+$('nx').onclick=()=>{i++;i<Q.length?ask():finish()};
+function finish(){$('pb').style.width='100%';show(2);play(score>=3?'win':'no');$('sc').textContent=score+' / '+Q.length;
+$('lv').textContent=score==5?'حارسة الأندلس الذهبية 🏆':score>=4?'درعك قوي 🛡️':score>=3?'جيدة، وتحتاجين لمسات 👍':'ابدئي من الأساسيات 🌱';
+const t=$('tips');t.innerHTML='';
+if(!wrong.length){const d=document.createElement('div');d.className='tip';d.textContent='أجبتِ عن كل المواقف بشكل صحيح. شاركي وعيك مع زميلاتك وصديقاتك.';t.appendChild(d)}
+else{const h=document.createElement('b');h.textContent='نصائح تناسب إجاباتك:';t.appendChild(h);wrong.forEach(k=>{const d=document.createElement('div');d.className='tip';d.textContent=Q[k].tip;t.appendChild(d)})}
+$('cp').textContent=''}
+$('rs').onclick=()=>{show(0);if(on)startAlarm();$('al').hidden=false;$('lead').hidden=true};
+$('sh').onclick=async()=>{const d={title:'لا تضغطي قبل أن تتحققي',text:'جربي اختبار الأمن السيبراني القصير 🛡️',url:location.href};
+try{if(navigator.share)await navigator.share(d);else{await navigator.clipboard.writeText(d.url);$('cp').textContent='تم نسخ الرابط'}}catch(e){$('cp').textContent=d.url}};
+</script>
+</body>
+</html>
